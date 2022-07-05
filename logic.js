@@ -47,3 +47,61 @@ function fill(){
     document.getElementById("status4").innerHTML = company4.cmpy_opst
     document.getElementById("revenue4").innerHTML = company4.close_price
 }
+
+let counter1 = 0
+let counter2 = 0
+let counter3 = 0
+let counter4 = 0
+
+function click1(){
+    counter1 += 1
+    if (counter1%2===1){
+        document.getElementById("locked1").style.display = "inherit"
+        document.getElementById("unlocked1").style.display = "none"
+        document.getElementsByClassName("column2")[0].style.backgroundColor = "lightcyan"
+    }
+    else{
+        document.getElementById("locked1").style.display = "none"
+        document.getElementById("unlocked1").style.display = "inherit"
+        document.getElementsByClassName("column2")[0].style.backgroundColor = "white"
+    }
+}
+function click2(){
+    counter2 += 1
+    if (counter2%2===1){
+        document.getElementById("locked2").style.display = "inherit"
+        document.getElementById("unlocked2").style.display = "none"
+        document.getElementsByClassName("column3")[0].style.backgroundColor = "lightcyan"
+    }
+    else{
+        document.getElementById("locked2").style.display = "none"
+        document.getElementById("unlocked2").style.display = "inherit"
+        document.getElementsByClassName("column3")[0].style.backgroundColor = "white"
+    }
+}
+function click3(){
+    counter3 += 1
+    if (counter3%2===1){
+        document.getElementById("locked3").style.display = "inherit"
+        document.getElementById("unlocked3").style.display = "none"
+        document.getElementsByClassName("column4")[0].style.backgroundColor = "lightcyan"
+    }
+    else{
+        document.getElementById("locked3").style.display = "none"
+        document.getElementById("unlocked3").style.display = "inherit"
+        document.getElementsByClassName("column4")[0].style.backgroundColor = "white"
+    }
+}
+function click4(){
+    counter4 += 1
+    if (counter4%2===1){
+        document.getElementById("locked4").style.display = "inherit"
+        document.getElementById("unlocked4").style.display = "none"
+        document.getElementsByClassName("column5")[0].style.backgroundColor = "lightcyan"
+    }
+    else{
+        document.getElementById("locked4").style.display = "none"
+        document.getElementById("unlocked4").style.display = "inherit"
+        document.getElementsByClassName("column5")[0].style.backgroundColor = "white"
+    }
+}
